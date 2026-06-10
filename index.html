@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nomos — Hero (sincronizado com o Figma)</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="stage">
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav" data-anim="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="#" aria-label="Nomos">
+        <img class="logo--desktop" src="assets/logo-desktop.webp" alt="Nomos — Melhores investidores" />
+        <img class="logo--mobile" src="assets/logo-mobile.webp" alt="Nomos" />
+      </a>
+
+      <nav class="nav__links" id="menu" aria-label="Navegação principal">
+        <button class="nav__close" id="navClose" type="button" aria-label="Fechar menu">&times;</button>
+        <a href="#">A Nomos</a>
+        <a href="#">Trader</a>
+        <a href="#">Educacional</a>
+        <a href="#">Contato</a>
+        <a href="#">TradeNews</a>
+        <a href="#">Nomos+</a>
+
+        <div class="nav__drawer-actions">
+          <a class="btn btn--primary" href="#">Abrir Conta</a>
+          <a class="btn btn--ghost" href="#">Acessar conta XP</a>
+        </div>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="#">Acessar conta XP</a>
+        <a class="btn btn--primary" href="#">Abrir Conta</a>
+      </div>
+
+      <!-- mobile -->
+      <a class="btn btn--primary nav__cta-mobile" href="#">Abrir Conta</a>
+      <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__overlay" id="navOverlay" aria-hidden="true"></div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <main class="hero">
+    <div class="container hero__inner">
+      <section class="hero__content">
+        <span class="eyebrow" data-anim="up">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M20 6 9 17l-5-5" stroke="#0E1A26" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Assessoria de investimentos parceira XP
+        </span>
+
+        <h1 class="hero__title" data-anim="up">
+          Encontre o seu <span class="accent">norte financeiro</span>.
+        </h1>
+
+        <p class="hero__sub" data-anim="up">
+          Do primeiro R$100 à estratégia de quem vive o mercado. Escolha o seu caminho:
+        </p>
+
+        <div class="segments" data-anim="up">
+          <a class="segment" href="#">
+            <span class="segment__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M4 19V11M9 19V5M14 19v-6M19 19V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span class="segment__text">
+              <strong>Sou Investidor</strong>
+              <small>Carteira, patrimônio e longo prazo</small>
+            </span>
+            <span class="segment__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="segment" href="#">
+            <span class="segment__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M3 16l5-5 4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 6h5v5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="segment__text">
+              <strong>Sou Trader</strong>
+              <small>Plataformas grátis e execução ágil</small>
+            </span>
+            <span class="segment__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+    </div>
+    <div class="hero__divider" aria-hidden="true"></div>
+  </main>
+  </div><!-- /.stage -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
